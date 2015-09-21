@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: follower
+Description: Description of follower
+Version: 0.0.0
+Cflags: 
+Libs: -L/usr/local/lib 
+Requires: 
