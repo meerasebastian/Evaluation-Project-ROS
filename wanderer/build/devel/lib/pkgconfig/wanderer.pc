@@ -1,0 +1,8 @@
+prefix=/home/meera/Evaluation_project/wanderer/build/devel
+
+Name: wanderer
+Description: Description of wanderer
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/meera/Evaluation_project/wanderer/build/devel/lib 
+Requires: 

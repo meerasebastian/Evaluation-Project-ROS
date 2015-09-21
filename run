@@ -1,0 +1,17 @@
+#!/bin/bash
+
+VERSION=jade  
+MAJOR_VERSION_NO=`cat /etc/issue | cut -d " " -f  2 | cut -d "." -f 1`
+MINOR_VERSION_NO=`cat /etc/issue | cut -d " " -f  2 | cut -d "." -f 2`
+if [ "$MAJOR_VERSION_NO" -eq "14" ]
+then VERSION=jade
+elif [ "$MAJOR_VERSION_NO" -eq "12" ]
+then VERSION=hydro
+elif [ "$MAJOR_VERSION_NO" -eq "13" -a "$MINOR_VERSION_NO" -eq "04" ]
+then VERSION=hydro
+else VERSION=indigo
+fi
+
+source /opt/ros/$VERSION/setup.bash
+export ROS_PACKAGE_PATH=`pwd`:$ROS_PACKAGE_PATH
+/opt/ros/$VERSION/bin/roslaunch start_simulator.launch

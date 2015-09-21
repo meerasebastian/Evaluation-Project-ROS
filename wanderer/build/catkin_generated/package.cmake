@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "wanderer")
+set(wanderer_MAINTAINER "meera <meera@todo.todo>")
+set(wanderer_DEPRECATED "")
+set(wanderer_VERSION "0.0.0")
+set(wanderer_BUILD_DEPENDS "roscpp" "sensor_msgs" "stage_ros")
+set(wanderer_RUN_DEPENDS "roscpp" "sensor_msgs" "stage_ros")
+set(wanderer_BUILDTOOL_DEPENDS "catkin")
